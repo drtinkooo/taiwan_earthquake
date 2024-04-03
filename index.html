@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_24ad2bee9955c380c679a19d556c5919 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_24ad2bee9955c380c679a19d556c5919" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_24ad2bee9955c380c679a19d556c5919 = L.map(
+                "map_24ad2bee9955c380c679a19d556c5919",
+                {
+                    center: [23.7, 121.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dbecbb284215ee1921db05ffd68cd911 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+            var tile_layer_aa8bc8ea6c6736e296e9ebbeb97c687b = L.tileLayer(
+                "https://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "Esri", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+            var circle_marker_8bc152a47819593ac3d0c16654e90030 = L.circleMarker(
+                [24.1165, 121.9003],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_686c472211caaeb931a04aa6a6d4715a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d27c8fc366adadbf46cca43cfe28ddf = $(`<div id="html_3d27c8fc366adadbf46cca43cfe28ddf" style="width: 100.0%; height: 100.0%;">Magnitude: 5<br>Location: 33 km ENE of Hualien City, Taiwan</div>`)[0];
+                popup_686c472211caaeb931a04aa6a6d4715a.setContent(html_3d27c8fc366adadbf46cca43cfe28ddf);
+            
+        
+
+        circle_marker_8bc152a47819593ac3d0c16654e90030.bindPopup(popup_686c472211caaeb931a04aa6a6d4715a)
+        ;
+
+        
+    
+    
+            var circle_marker_0c78aa8764fc8a36596a9fea8c340b80 = L.circleMarker(
+                [23.8852, 121.5678],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.0, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_fdb3cdc237d43aae6c98f0fbc108368c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5bc3fafdec336cb67649de43cb4d3b1 = $(`<div id="html_b5bc3fafdec336cb67649de43cb4d3b1" style="width: 100.0%; height: 100.0%;">Magnitude: 4.8<br>Location: 10 km SSW of Hualien City, Taiwan</div>`)[0];
+                popup_fdb3cdc237d43aae6c98f0fbc108368c.setContent(html_b5bc3fafdec336cb67649de43cb4d3b1);
+            
+        
+
+        circle_marker_0c78aa8764fc8a36596a9fea8c340b80.bindPopup(popup_fdb3cdc237d43aae6c98f0fbc108368c)
+        ;
+
+        
+    
+    
+            var circle_marker_7c2340bbe73f0775e12349a0129808f4 = L.circleMarker(
+                [24.0922, 121.7035],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.5, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_5e9620126afe09eeccd34eaa484e60be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30760da9bbb58c751bbcb9b313037de1 = $(`<div id="html_30760da9bbb58c751bbcb9b313037de1" style="width: 100.0%; height: 100.0%;">Magnitude: 4.9<br>Location: 16 km NE of Hualien City, Taiwan</div>`)[0];
+                popup_5e9620126afe09eeccd34eaa484e60be.setContent(html_30760da9bbb58c751bbcb9b313037de1);
+            
+        
+
+        circle_marker_7c2340bbe73f0775e12349a0129808f4.bindPopup(popup_5e9620126afe09eeccd34eaa484e60be)
+        ;
+
+        
+    
+    
+            var circle_marker_e3ff4f74c954fdde873c2c9e1a2cdd01 = L.circleMarker(
+                [24.0478, 121.7162],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.0, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_f14742b51cfeb242e44448de51a70117 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c90197c411e344ed0e119b1ea4adb4a = $(`<div id="html_0c90197c411e344ed0e119b1ea4adb4a" style="width: 100.0%; height: 100.0%;">Magnitude: 4.6<br>Location: 13 km NE of Hualien City, Taiwan</div>`)[0];
+                popup_f14742b51cfeb242e44448de51a70117.setContent(html_0c90197c411e344ed0e119b1ea4adb4a);
+            
+        
+
+        circle_marker_e3ff4f74c954fdde873c2c9e1a2cdd01.bindPopup(popup_f14742b51cfeb242e44448de51a70117)
+        ;
+
+        
+    
+    
+            var circle_marker_123c5bd9f9303224f9c79a2bca9c793d = L.circleMarker(
+                [24.0117, 121.6846],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.0, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_4ff3f7cbedddaf39c5f2fdc8835dc9a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32ab27724c5dec193b799f42877300a9 = $(`<div id="html_32ab27724c5dec193b799f42877300a9" style="width: 100.0%; height: 100.0%;">Magnitude: 4.8<br>Location: 9 km ENE of Hualien City, Taiwan</div>`)[0];
+                popup_4ff3f7cbedddaf39c5f2fdc8835dc9a9.setContent(html_32ab27724c5dec193b799f42877300a9);
+            
+        
+
+        circle_marker_123c5bd9f9303224f9c79a2bca9c793d.bindPopup(popup_4ff3f7cbedddaf39c5f2fdc8835dc9a9)
+        ;
+
+        
+    
+    
+            var circle_marker_4dbfcc0d898de9a33da1c1c08d16c88f = L.circleMarker(
+                [23.6604, 121.7736],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.5, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_78d31e602921a1cc2e2b19d617666daf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f48e1767d2b3f83371abe36a7b706dd = $(`<div id="html_3f48e1767d2b3f83371abe36a7b706dd" style="width: 100.0%; height: 100.0%;">Magnitude: 4.5<br>Location: 39 km SSE of Hualien City, Taiwan</div>`)[0];
+                popup_78d31e602921a1cc2e2b19d617666daf.setContent(html_3f48e1767d2b3f83371abe36a7b706dd);
+            
+        
+
+        circle_marker_4dbfcc0d898de9a33da1c1c08d16c88f.bindPopup(popup_78d31e602921a1cc2e2b19d617666daf)
+        ;
+
+        
+    
+    
+            var circle_marker_3c1b489ead9693b5a9eb5886c62472c6 = L.circleMarker(
+                [23.7937, 121.5508],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.5, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_a084270b9cb680de044dac00811540e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ef7c17757cbc03e6a73a12d7767b1a7 = $(`<div id="html_7ef7c17757cbc03e6a73a12d7767b1a7" style="width: 100.0%; height: 100.0%;">Magnitude: 4.9<br>Location: 21 km SSW of Hualien City, Taiwan</div>`)[0];
+                popup_a084270b9cb680de044dac00811540e9.setContent(html_7ef7c17757cbc03e6a73a12d7767b1a7);
+            
+        
+
+        circle_marker_3c1b489ead9693b5a9eb5886c62472c6.bindPopup(popup_a084270b9cb680de044dac00811540e9)
+        ;
+
+        
+    
+    
+            var circle_marker_615997737dfa08adb6c9bbd0eaa13f3b = L.circleMarker(
+                [23.7722, 121.7864],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.0, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_d4fa285a9ac223882ff199ece6cdaad3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c42026ba59976ef56dd05f7dec7d7312 = $(`<div id="html_c42026ba59976ef56dd05f7dec7d7312" style="width: 100.0%; height: 100.0%;">Magnitude: 4.8<br>Location: 29 km SE of Hualien City, Taiwan</div>`)[0];
+                popup_d4fa285a9ac223882ff199ece6cdaad3.setContent(html_c42026ba59976ef56dd05f7dec7d7312);
+            
+        
+
+        circle_marker_615997737dfa08adb6c9bbd0eaa13f3b.bindPopup(popup_d4fa285a9ac223882ff199ece6cdaad3)
+        ;
+
+        
+    
+    
+            var circle_marker_1be6b0103a24ff723466b408ea2d24bd = L.circleMarker(
+                [24.18, 121.8808],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.5, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_579c3b96990f9597733f9aa067798bb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4f4dff1c1182e8561bed50e60cf7f6b = $(`<div id="html_b4f4dff1c1182e8561bed50e60cf7f6b" style="width: 100.0%; height: 100.0%;">Magnitude: 5.1<br>Location: 35 km NE of Hualien City, Taiwan</div>`)[0];
+                popup_579c3b96990f9597733f9aa067798bb3.setContent(html_b4f4dff1c1182e8561bed50e60cf7f6b);
+            
+        
+
+        circle_marker_1be6b0103a24ff723466b408ea2d24bd.bindPopup(popup_579c3b96990f9597733f9aa067798bb3)
+        ;
+
+        
+    
+    
+            var circle_marker_191e59cf00f89d74140ec91e0abbfc26 = L.circleMarker(
+                [24.1385, 121.6484],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.5, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_35a2ba775e05c46e631785f59c39518f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_245999cecb8618f7ec05ba5f49e20642 = $(`<div id="html_245999cecb8618f7ec05ba5f49e20642" style="width: 100.0%; height: 100.0%;">Magnitude: 4.7<br>Location: 18 km NNE of Hualien City, Taiwan</div>`)[0];
+                popup_35a2ba775e05c46e631785f59c39518f.setContent(html_245999cecb8618f7ec05ba5f49e20642);
+            
+        
+
+        circle_marker_191e59cf00f89d74140ec91e0abbfc26.bindPopup(popup_35a2ba775e05c46e631785f59c39518f)
+        ;
+
+        
+    
+    
+            var circle_marker_464ea48f8cd8adb7dfde89fc41105138 = L.circleMarker(
+                [23.9333, 121.5685],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.5, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_0d22ecb4f8c83fadb183d7db6b998c46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41459bf2d8b9c38a1dd2ad2d17a8e964 = $(`<div id="html_41459bf2d8b9c38a1dd2ad2d17a8e964" style="width: 100.0%; height: 100.0%;">Magnitude: 4.9<br>Location: 6 km SW of Hualien City, Taiwan</div>`)[0];
+                popup_0d22ecb4f8c83fadb183d7db6b998c46.setContent(html_41459bf2d8b9c38a1dd2ad2d17a8e964);
+            
+        
+
+        circle_marker_464ea48f8cd8adb7dfde89fc41105138.bindPopup(popup_0d22ecb4f8c83fadb183d7db6b998c46)
+        ;
+
+        
+    
+    
+            var circle_marker_591250d938f092188b8dd6eb7074d9ff = L.circleMarker(
+                [24.2125, 121.7965],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_546b31c6151e25f4e56d0c021d448ca8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8532c99437d0d82859c7620ae5864cd = $(`<div id="html_a8532c99437d0d82859c7620ae5864cd" style="width: 100.0%; height: 100.0%;">Magnitude: 5.2<br>Location: 32 km NE of Hualien City, Taiwan</div>`)[0];
+                popup_546b31c6151e25f4e56d0c021d448ca8.setContent(html_a8532c99437d0d82859c7620ae5864cd);
+            
+        
+
+        circle_marker_591250d938f092188b8dd6eb7074d9ff.bindPopup(popup_546b31c6151e25f4e56d0c021d448ca8)
+        ;
+
+        
+    
+    
+            var circle_marker_af85a136761dbcc7934676d9b29f011e = L.circleMarker(
+                [24.1954, 121.9323],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.5, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_9ae288b1ad5508b60bd8955928855b51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bfeae7e64f326f38b4636ab0748b632 = $(`<div id="html_7bfeae7e64f326f38b4636ab0748b632" style="width: 100.0%; height: 100.0%;">Magnitude: 5.7<br>Location: 41 km NE of Hualien City, Taiwan</div>`)[0];
+                popup_9ae288b1ad5508b60bd8955928855b51.setContent(html_7bfeae7e64f326f38b4636ab0748b632);
+            
+        
+
+        circle_marker_af85a136761dbcc7934676d9b29f011e.bindPopup(popup_9ae288b1ad5508b60bd8955928855b51)
+        ;
+
+        
+    
+    
+            var circle_marker_5735164b14d59722dda69132e57ba7b5 = L.circleMarker(
+                [24.138, 121.7966],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.5, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_10865d39b93e00d6803f4ff49a339978 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_995accc4d36f3a55841e0ca8cd8b567a = $(`<div id="html_995accc4d36f3a55841e0ca8cd8b567a" style="width: 100.0%; height: 100.0%;">Magnitude: 4.7<br>Location: 26 km NE of Hualien City, Taiwan</div>`)[0];
+                popup_10865d39b93e00d6803f4ff49a339978.setContent(html_995accc4d36f3a55841e0ca8cd8b567a);
+            
+        
+
+        circle_marker_5735164b14d59722dda69132e57ba7b5.bindPopup(popup_10865d39b93e00d6803f4ff49a339978)
+        ;
+
+        
+    
+    
+            var circle_marker_c2a9ebe41f74fa6a3b4dceabdd9d5778 = L.circleMarker(
+                [23.8894, 121.608],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.5, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_12850c8653b8b9094066f05a219cebb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efcfb71135f16e154030ce91a1cc92a7 = $(`<div id="html_efcfb71135f16e154030ce91a1cc92a7" style="width: 100.0%; height: 100.0%;">Magnitude: 5.1<br>Location: 9 km S of Hualien City, Taiwan</div>`)[0];
+                popup_12850c8653b8b9094066f05a219cebb6.setContent(html_efcfb71135f16e154030ce91a1cc92a7);
+            
+        
+
+        circle_marker_c2a9ebe41f74fa6a3b4dceabdd9d5778.bindPopup(popup_12850c8653b8b9094066f05a219cebb6)
+        ;
+
+        
+    
+    
+            var circle_marker_3fcf40151f4ae96c3df12cf3f7feea78 = L.circleMarker(
+                [23.8521, 121.8845],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.5, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_21121204226fc17ac6b7abe92b984376 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e25b9bb2de4bf7ace3c306af9e7cf11 = $(`<div id="html_6e25b9bb2de4bf7ace3c306af9e7cf11" style="width: 100.0%; height: 100.0%;">Magnitude: 5.1<br>Location: 31 km ESE of Hualien City, Taiwan</div>`)[0];
+                popup_21121204226fc17ac6b7abe92b984376.setContent(html_6e25b9bb2de4bf7ace3c306af9e7cf11);
+            
+        
+
+        circle_marker_3fcf40151f4ae96c3df12cf3f7feea78.bindPopup(popup_21121204226fc17ac6b7abe92b984376)
+        ;
+
+        
+    
+    
+            var circle_marker_5bc4003fbf86cd2d3b9c863ddf76da3a = L.circleMarker(
+                [23.8555, 121.8035],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.5, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_8f7dea9669763be53a194c18362cbfc6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccc8b99f5480436d4ad6b9231ebeb775 = $(`<div id="html_ccc8b99f5480436d4ad6b9231ebeb775" style="width: 100.0%; height: 100.0%;">Magnitude: 5.7<br>Location: 24 km ESE of Hualien City, Taiwan</div>`)[0];
+                popup_8f7dea9669763be53a194c18362cbfc6.setContent(html_ccc8b99f5480436d4ad6b9231ebeb775);
+            
+        
+
+        circle_marker_5bc4003fbf86cd2d3b9c863ddf76da3a.bindPopup(popup_8f7dea9669763be53a194c18362cbfc6)
+        ;
+
+        
+    
+    
+            var circle_marker_066a49bbd999f3606c3775ebd75f754e = L.circleMarker(
+                [23.9644, 121.752],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.5, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_498e12b8580c66faebd2c4d7fdf0fa41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61390aebb6d5d4cf9dc0b4ec42022875 = $(`<div id="html_61390aebb6d5d4cf9dc0b4ec42022875" style="width: 100.0%; height: 100.0%;">Magnitude: 5.1<br>Location: 15 km E of Hualien City, Taiwan</div>`)[0];
+                popup_498e12b8580c66faebd2c4d7fdf0fa41.setContent(html_61390aebb6d5d4cf9dc0b4ec42022875);
+            
+        
+
+        circle_marker_066a49bbd999f3606c3775ebd75f754e.bindPopup(popup_498e12b8580c66faebd2c4d7fdf0fa41)
+        ;
+
+        
+    
+    
+            var circle_marker_2c7134a5d4d5a03d5c94e74c47951704 = L.circleMarker(
+                [24.1796, 121.7463],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_a480f07873c0498de6253a55cdef65e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a6cedad3bd185516f58d9ff2de2264c = $(`<div id="html_7a6cedad3bd185516f58d9ff2de2264c" style="width: 100.0%; height: 100.0%;">Magnitude: 5.2<br>Location: 26 km NNE of Hualien City, Taiwan</div>`)[0];
+                popup_a480f07873c0498de6253a55cdef65e8.setContent(html_7a6cedad3bd185516f58d9ff2de2264c);
+            
+        
+
+        circle_marker_2c7134a5d4d5a03d5c94e74c47951704.bindPopup(popup_a480f07873c0498de6253a55cdef65e8)
+        ;
+
+        
+    
+    
+            var circle_marker_5deae1dca9493cb0c8b65200f313f4fa = L.circleMarker(
+                [23.7842, 121.5559],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.0, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_fb8c6ed38fe4cba914baf8b95918855a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b3bc19b74dab5c11b969eceaf09bc65 = $(`<div id="html_0b3bc19b74dab5c11b969eceaf09bc65" style="width: 100.0%; height: 100.0%;">Magnitude: 5.2<br>Location: 21 km SSW of Hualien City, Taiwan</div>`)[0];
+                popup_fb8c6ed38fe4cba914baf8b95918855a.setContent(html_0b3bc19b74dab5c11b969eceaf09bc65);
+            
+        
+
+        circle_marker_5deae1dca9493cb0c8b65200f313f4fa.bindPopup(popup_fb8c6ed38fe4cba914baf8b95918855a)
+        ;
+
+        
+    
+    
+            var circle_marker_6ee73f1a333a424bf30b9af84e1818d3 = L.circleMarker(
+                [24.1465, 121.7427],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.5, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_dfaeddff4f4f47f4ef69efa2e208a084 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3cb3084a58f10b47f49757e0d528f98d = $(`<div id="html_3cb3084a58f10b47f49757e0d528f98d" style="width: 100.0%; height: 100.0%;">Magnitude: 5.7<br>Location: 23 km NE of Hualien City, Taiwan</div>`)[0];
+                popup_dfaeddff4f4f47f4ef69efa2e208a084.setContent(html_3cb3084a58f10b47f49757e0d528f98d);
+            
+        
+
+        circle_marker_6ee73f1a333a424bf30b9af84e1818d3.bindPopup(popup_dfaeddff4f4f47f4ef69efa2e208a084)
+        ;
+
+        
+    
+    
+            var circle_marker_e63dddb43be07dc3ceda22f5fbe54a61 = L.circleMarker(
+                [23.9598, 121.5954],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.5, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_8fd330e17aaf92105c14c2f00943c788 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01f250a3619347996a321d133520a4ac = $(`<div id="html_01f250a3619347996a321d133520a4ac" style="width: 100.0%; height: 100.0%;">Magnitude: 5.5<br>Location: 2 km SSW of Hualien City, Taiwan</div>`)[0];
+                popup_8fd330e17aaf92105c14c2f00943c788.setContent(html_01f250a3619347996a321d133520a4ac);
+            
+        
+
+        circle_marker_e63dddb43be07dc3ceda22f5fbe54a61.bindPopup(popup_8fd330e17aaf92105c14c2f00943c788)
+        ;
+
+        
+    
+    
+            var circle_marker_a5a73dff945f2d497af003b4bcbdba8e = L.circleMarker(
+                [24.1609, 121.7097],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.5, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_ed2ef79a6eb3fe467a212e13d7d3d1d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0544c4d0baf7fc4d2c7d944b67499378 = $(`<div id="html_0544c4d0baf7fc4d2c7d944b67499378" style="width: 100.0%; height: 100.0%;">Magnitude: 5.7<br>Location: 23 km NNE of Hualien City, Taiwan</div>`)[0];
+                popup_ed2ef79a6eb3fe467a212e13d7d3d1d3.setContent(html_0544c4d0baf7fc4d2c7d944b67499378);
+            
+        
+
+        circle_marker_a5a73dff945f2d497af003b4bcbdba8e.bindPopup(popup_ed2ef79a6eb3fe467a212e13d7d3d1d3)
+        ;
+
+        
+    
+    
+            var circle_marker_19ad6f9b6a05b91281054b480f2ca352 = L.circleMarker(
+                [24.0639, 121.6717],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.0, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_41a1f0527f30174d6e61c79bd843ef8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf2a2e82a37bf719fb48e5a4d0ea2f20 = $(`<div id="html_cf2a2e82a37bf719fb48e5a4d0ea2f20" style="width: 100.0%; height: 100.0%;">Magnitude: 6.4<br>Location: 11 km NE of Hualien City, Taiwan</div>`)[0];
+                popup_41a1f0527f30174d6e61c79bd843ef8d.setContent(html_cf2a2e82a37bf719fb48e5a4d0ea2f20);
+            
+        
+
+        circle_marker_19ad6f9b6a05b91281054b480f2ca352.bindPopup(popup_41a1f0527f30174d6e61c79bd843ef8d)
+        ;
+
+        
+    
+    
+            var circle_marker_937b633340cbba78e180c379be1d70f2 = L.circleMarker(
+                [23.819, 121.5616],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 37.0, "stroke": true, "weight": 3}
+            ).addTo(map_24ad2bee9955c380c679a19d556c5919);
+        
+    
+        var popup_2769745376ae0e2271d44471ca288f5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a9ccda9357e3d963016bc3d3f1015cc = $(`<div id="html_1a9ccda9357e3d963016bc3d3f1015cc" style="width: 100.0%; height: 100.0%;">Magnitude: 7.4<br>Location: 18 km SSW of Hualien City, Taiwan</div>`)[0];
+                popup_2769745376ae0e2271d44471ca288f5a.setContent(html_1a9ccda9357e3d963016bc3d3f1015cc);
+            
+        
+
+        circle_marker_937b633340cbba78e180c379be1d70f2.bindPopup(popup_2769745376ae0e2271d44471ca288f5a)
+        ;
+
+        
+    
+</script>
+</html>
